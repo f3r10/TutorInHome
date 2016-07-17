@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/activity_horizontal_margin"
+    android:padding="@dimen/activity_horizontal_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".tutorlist.ui.TutorListActivity"
+    tools:showIn="@layout/activity_tutor_detail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            >
+
+
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingBar"
+                android:numStars="5"
+                android:rating="2.5"
+                android:max="5"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:stepSize="0.25"
+                android:isIndicator="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="36dp"
+                android:layout_marginStart="36dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/txtScore"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_marginLeft="@dimen/detail_tutor_score_rating"
+                android:textColor="#727272"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ratingBar"
+                android:layout_toEndOf="@+id/ratingBar" />
+
+
+        </RelativeLayout>
+        <include layout="@layout/item_divider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="false"
+            android:padding="@dimen/activity_horizontal_margin">
+
+
+
+            <ImageView
+                android:id="@+id/imgEducation"
+                android:layout_width="@dimen/content_tutor_img_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@mipmap/ic_tih_logo" />
+
+            <TextView
+                android:id="@+id/txtInstitution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_item_horizontal_margin"
+                android:layout_marginStart="@dimen/detail_item_horizontal_margin"
+                android:layout_toEndOf="@id/imgEducation"
+                android:layout_toRightOf="@id/imgEducation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtInstitution"
+                android:layout_marginLeft="@dimen/detail_item_horizontal_margin"
+                android:layout_marginStart="@dimen/detail_item_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/imgEducation"
+                android:layout_toRightOf="@id/imgEducation"
+                android:id="@+id/txtMajor"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="#727272" />
+
+
+
+
+
+        </RelativeLayout>
+        <include layout="@layout/item_divider" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:id="@+id/imgGeneralInfo"
+                android:layout_width="@dimen/content_tutor_img_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@android:drawable/ic_dialog_info"
+                android:tint="@color/colorPrimary"
+                 />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/detail_item_horizontal_margin"
+                android:layout_marginStart="@dimen/detail_item_horizontal_margin"
+                android:layout_toEndOf="@id/imgGeneralInfo"
+                android:layout_toRightOf="@id/imgGeneralInfo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+
+            <TextView
+                android:id="@+id/txtReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPrice"
+                android:layout_marginLeft="@dimen/detail_item_horizontal_margin"
+                android:layout_marginStart="@dimen/detail_item_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/imgGeneralInfo"
+                android:layout_toRightOf="@id/imgGeneralInfo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtReview"
+                android:layout_marginLeft="@dimen/detail_item_horizontal_margin"
+                android:layout_marginStart="@dimen/detail_item_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@id/imgGeneralInfo"
+                android:layout_toRightOf="@id/imgGeneralInfo"
+                android:id="@+id/txtHourWork"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+
+
+        </RelativeLayout>
+        <include layout="@layout/item_divider" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleExperience"
+                android:text="Experiencia"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                />
+
+            <TextView
+                android:id="@+id/txtExperience"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleExperience"
+                android:layout_marginLeft="@dimen/detail_item_horizontal_margin"
+                android:layout_marginStart="@dimen/detail_item_horizontal_margin"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

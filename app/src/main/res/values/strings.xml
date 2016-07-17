@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TutorInHome</string>
+
+    <string name="login.message.email">Correo electrónico</string>
+    <string name="login.message.password">Contraseña</string>
+    <string name="login.button.signin">Iniciar sesión</string>
+    <string name="login.button.signup">Crear cuenta</string>
+    <string name="login.error.message.signin">Imposible iniciar sesion %s</string>
+    <string name="login.error.message.signup">Imposible registrar nuevo usuario %s</string>
+    <string name="login.notice.message.signup">Usuario agregado exitosamente</string>
+
+
+    <string name="general.menu.action.sigoff">Cerrar sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="booking.name">Nombre</string>
+    <string name="bookingtutor_message_title">Reservar Clase</string>
+    <string name="bookingtutor_message_add">Reservar</string>
+    <string name="bookingtutor_message_cancel">Cancelar</string>
+    <string name="bookingtutor_title_pick_hours">Número de horas de clase</string>
+    <string name="bookingtutor_message_bookingadded">La reserva se ha realizado de manera exitosa</string>
+    <string name="bookingtutor_message_bookingerror">Ha ocurrido un error al hacer la reserva intenta mas tarde por favor</string>
+    <string name="bookingtutor_message_booking_input_incomplete">Todos los campos son obligatorios</string>
+
+
+</resources>

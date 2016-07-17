@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="subjects">
+        <item>Matematicas</item>
+        <item>Lenguaje</item>
+        <item>Algebra</item>
+    </array>
+</resources>

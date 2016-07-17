@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".bookingtutor.ui.BookingTutorFragment">
+
+
+    <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+        android:id="@+id/spinnerSubjec"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seleccionar Materia"
+        android:textColorHint="@color/colorAccent"
+        app:met_floatingLabel="normal"
+        />
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/wrapperDay"
+        android:layout_below="@+id/spinnerSubjec">
+        <EditText
+            android:id="@+id/editTextDay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:hint="Seleccionar Día"
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+            <requestFocus />
+        </EditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:id="@+id/wrapperDate"
+        android:layout_below="@+id/wrapperDay">
+        <EditText
+            android:id="@+id/editTextStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:editable="false"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            android:hint="Seleccionar Hora"
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+            <requestFocus />
+        </EditText>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bookingtutor_title_pick_hours"
+        android:layout_below="@+id/wrapperDate"
+        android:id="@+id/txtTitleSelectHours"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <SeekBar
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitleSelectHours"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/seekBarTimeHours"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horas de clase: 2 horas"
+        android:layout_below="@id/seekBarTimeHours"
+        android:id="@+id/txtHoursPicked"
+        android:layout_centerHorizontal="true"/>
+
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+
+
+
+
+</RelativeLayout>
